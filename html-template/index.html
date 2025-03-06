@@ -1,0 +1,22 @@
+{{ define "Base" }}
+<!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Booking Examle</title>
+      <link href="/static/index.css" rel="stylesheet" />
+      <script src="/static/htmx.mjs" type="text/javascript"></script>
+    </head>
+    <body class="bg-neutral-900 text-white">
+      <div class="container mx-auto px-4 mt-8 ">
+        <div class="flex justify-between items-center">
+            <p class="underline text-sky-500 decoration-sky-500 text-3xl font-bold">BTP Corrective</p>
+        </div>
+        <div id="content" class="space-y-2.5 mt-4">
+          <!-- {{ .Content }}  -->
+        </div>
+      </div>
+    </body>
+  </html>
+{{ end }}
