@@ -12,5 +12,13 @@
 10. Setup a "dev" script in the package.json that uses concurrently to run tailwind and vite ` "dev": "concurrently \"vite build --watch\" \"tailwindcss -i ./src/index.css -o ./static/index.css --watch\""`
 11. At this point you have enough data in place to run `air init` which will generate a comprable .air.toml file to control the air relaoder
 12. Add htmx to the the node modules `pnpm install htmx.org`
-13 templ : install from https://templ.guide/quick-start/installation
+13. templ : install from https://templ.guide/quick-start/installation
+14. Once you have templ installed, add it to your air config in .air.toml `cmd = "templ generate && go build -o ./tmp/main ."` .  
+15.  Start up the two processes to keep your dev servers refreshed in two separate terminal windows `pnpm dev` and `air`
+16.  Navigate to http://localhost:8080/
 
+
+
+
+## Trickyness
+1. Newer go versions, starting in 1.23.10? , they try to check the x509 certificates for validity at a higher stantand during go module downloads a, you will get a error like this `failed to parse certificate, 509, negative serial number`.   You will want to a flag into godebug `export GODEBUG="x509negativeserial=1"`
