@@ -5,9 +5,9 @@ export default defineConfig({
     build: {
         lib: {
             entry: [
-                // resolve(__dirname, "src/chart.js"),
+                resolve(__dirname, "src/chart.js"),
                 resolve(__dirname, "src/htmx.js"),
-                // resolve(__dirname, "src/localChart.js"),
+                resolve(__dirname, "src/localChart.js"),
             ],
             formats: ["es"],
             name: "[name]",

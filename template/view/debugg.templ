@@ -1,0 +1,28 @@
+package view
+
+
+templ Debugg () {
+    <script>
+    console.log("Debug script loading: ");
+    document.body.addEventListener("htmx:afterSettle", function (evt) {
+        console.log("htmx:afterSettle event fired", evt);
+    });
+    document.body.addEventListener("htmx:beforeRequest", function (evt) {
+      console.log("htmx:beforeRequest event fired", evt);
+    });
+    document.body.addEventListener("htmx:beforeOnLoad", function (evt) {
+      console.log("htmx:beforeOnLoad event fired", evt);
+    });
+    document.body.addEventListener("htmx:afterOnLoad", function (evt) {
+      console.log("htmx:afterOnLoad event fired", evt);
+    });
+    document.body.addEventListener("htmx:beforeSwap", function (evt) {
+      console.log("htmx:beforeSwap event fired", evt);
+    });
+    document.body.addEventListener("htmx:afterSwap", function (evt) {
+      console.log("htmx:afterSwap event fired", evt);
+    }); 
+
+
+    </script>
+}
