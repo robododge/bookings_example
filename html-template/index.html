@@ -4,11 +4,17 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="icon" type="image/png" href="/static/favicon-96x96.png" sizes="96x96" />
+      <link rel="icon" type="image/svg+xml" href="/static/favicon.svg" />
+      <link rel="shortcut icon" href="/static/favicon.ico" />
+      <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
+      <link rel="manifest" href="/static/site.webmanifest" />
       <title>Booking Examle</title>
       <link href="/static/index.css" rel="stylesheet" />
       <script src="/static/htmx.mjs" type="text/javascript"></script>
     </head>
     <body class="bg-neutral-900 text-white">
+      {{ .Debug }}
       <div class="container mx-auto px-4 mt-8 ">
         <div class="flex justify-between items-center">
             <p class="underline text-sky-500 decoration-sky-500 text-3xl font-bold">Booking Demo</p>

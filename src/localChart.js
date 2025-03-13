@@ -13,7 +13,7 @@
       console.log("What was chartLabels?",chartLabels);
 
       if (chart) {
-        console.log("Updating chart!");
+        console.log("Updating chart (1)!");
         chart.data.labels = JSON.parse(chartLabels);
         chart.data.datasets = [
           {
@@ -22,7 +22,7 @@
           },
         ];
         chart.update();
-        console.log("Updated chart!",chart.data);
+        console.log("Updated chart (2)!",chart.data);
         return;
       }
 
@@ -104,7 +104,7 @@
   
     document.body.addEventListener("htmx:afterSettle", function (evt) {
       if (evt.detail.target.id === `chart-card-${chartId}`) {
-        console.log("SHOULD be Rendering chart!");
+        console.log("SHOULD be Rendering chart!-!-!-!");
         renderChart(chart, evt.detail.target);
       }
     });
