@@ -17,6 +17,8 @@
 15.  Start up the two processes to keep your dev servers refreshed in two separate terminal windows `pnpm dev` and `air`
 16.  Navigate to http://localhost:8080/
 
+Makefiles are recommended here
+
 
 
 
